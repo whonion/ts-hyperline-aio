@@ -17,7 +17,7 @@
     "dotenv": "^16.4.5",
     "stargate": "^0.0.0",
     "ts-node": "^10.9.2",
-    "viem": "^2.10.11"
+    "viem": "^2.11.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12"

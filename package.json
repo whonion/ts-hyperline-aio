@@ -1,0 +1,25 @@
+{
+  "name": "ts-hyperline-aio",
+  "version": "1.0.0",
+  "description": "TypeScript Implementation of bridger and minter for hyperline projects",
+  "start": "ts-node run.ts",
+  "compile": "tsc --project tsconfig.json",
+  "author": "https://github.com/whonion",
+  "scripts": {
+    "start": "ts-node main.ts",
+    "compile": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.32.3",
+    "@cosmjs/stargate": "^0.32.3",
+    "@cosmology/telescope": "^1.5.10",
+    "bech32": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "stargate": "^0.0.0",
+    "ts-node": "^10.9.2",
+    "viem": "^2.10.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  }
+}

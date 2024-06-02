@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@cosmjs/proto-signing": "^0.32.3",
-    "bech32": "^3.3.2",
+    "bech32": "^2.0.0",
     "dotenv": "^16.4.5",
     "node-fetch": "^3.3.2",
     "ts-node": "^10.9.2",

@@ -2,56 +2,30 @@
   "name": "ts-hyperline-aio",
   "version": "1.0.0",
   "description": "TypeScript Implementation of bridger and minter for hyperline projects",
-  "author": "RegEdit",
-  "license": "MIT",
-  "keywords": [
-    "Hyperline",
-    "ODOS",
-    "Camelot",
-    "Nexus",
-    "Nautilus"
-  ],
-  "bugs": {
-    "url": "https://github.com/whonion/ts-hyperline-aio/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/whonion/ts-hyperline-aio"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "files": [
-    "main.ts",
-    "src",
-    "data",
-    "LICENSE",
-    "README.md",
-    "SECURITY.md",
-    "CODE_OF_CONDUCT.md",
-    "!**/.gitattributes"
-  ],
+  "start": "ts-node main.ts",
+  "compile": "tsc --project tsconfig.json",
+  "author": "https://github.com/whonion",
   "scripts": {
-    "app": "npm-run-all nexus odos bridge",
-
-    "nexus": "ts-node main.ts",
+    "start": "ts-node main.ts",
     "odos": "ts-node src/odos.ts",
     "bridge": "ts-node src/nautilus.ts",
     "unbridge": "ts-node src/nautilusback.ts",
-
+    "bridge-cosmos": "ts-node src/nexusback.ts",
+    "app": "npm-run-all start odos bridge",
     "build": "tsc --project tsconfig.json",
     "clean": "tsc --build --clean"
   },
   "dependencies": {
     "@cosmjs/proto-signing": "^0.32.3",
+    "@cosmjs/stargate": "^0.32.3",
     "bech32": "^2.0.0",
     "dotenv": "^16.4.5",
     "node-fetch": "^3.3.2",
     "ts-node": "^10.9.2",
-    "viem": "^2.13.0"
+    "viem": "^2.16.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.8",
     "npm-run-all": "^4.1.5"
   }
 }
